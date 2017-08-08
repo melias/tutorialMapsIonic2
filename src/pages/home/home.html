@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>Your Location: {{location.lat}} / {{location.lng}}</p>
+  <agm-map [latitude]="location.lat" [longitude]="location.lng">
+    <agm-marker [latitude]="location.lat" [longitude]="location.lng"></agm-marker>
+  </agm-map>
+</ion-content>
